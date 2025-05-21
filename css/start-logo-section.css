@@ -1,0 +1,33 @@
+/*
+    CSS код только части секции 'start-logo'
+*/
+
+.start-logo-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-logo {
+    --start-logo-size: min(70%, 50vh);
+    width: var(--start-logo-size);
+    height: var(--start-logo-size) * 0.8f;
+    position: relative;
+
+    transition: top;
+}
+
+.start-logo-btn {
+    color: var(--color-purple-main);
+    cursor: pointer;
+    width: min(70%, 50vh);
+    height: 100%;
+    border-radius: 10px;
+    border: 3px dashed var(--color-purple-main);
+    font-weight: 900;
+    font-size: 100%;
+    background-color: black;
+    padding: 15px 0;
+
+
+}

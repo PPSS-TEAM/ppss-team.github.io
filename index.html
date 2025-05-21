@@ -13,7 +13,8 @@
 
   <!-- Scripts -->
 
-  <script src="./javascript/tmp.js" type="module"></script>
+  <script src="./javascript/tmp.js"></script>
+  <script src="./javascript/openScreenshots.js"></script>
 
 </head>
 
@@ -24,19 +25,68 @@
 
   <main>
     <section class="start-logo-section">
-      <img class="start-logo" src="./img/full_logo.png" alt="Логотип игры 'Papers, Please. Save Skoatia'" id="test"/>
+      <img class="start-logo" src="./img/full_logo.png" alt="Логотип игры 'Papers, Please. Save Skoatia'" id="test" />
       <button class="start-logo-btn">
         Играть
       </button>
     </section>
     <section class="about-project-section">
+      <div id="modal" class="modal">
+        <img class="modal-content" id="modal-img" onclick="closeScreenshot()">
+      </div>
 
+      <div class="pictures-about-project">
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+      </div>
+      <div class="about-project">
+        <img class="paper" src="./img/paper.png" alt="Газета" />
+        <p1 class="text-on-paper">Наш проект - просто чудо!</p>
+      </div>
+      <div class="">
+
+      </div>
     </section>
   </main>
 
   <footer class="footer">
 
   </footer>
+
 </body>
 
 </html>
