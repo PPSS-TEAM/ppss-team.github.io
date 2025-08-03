@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const fontFamily = 'Veda, sans-serif';
     // NOTE: Теперь эти переменные влияют на цвет текста
     const defaultColor = '#6f407e';
-    const hoverColor = '#500050';
+    const hoverColor = '#331933';
     const textPadding = 50; // Увеличиваем отступ вокруг текста для более широкой области наведения
 
     // NOTE: Новые переменные для автоматической смены текста на устройствах без курсора
@@ -156,4 +156,5 @@ window.addEventListener('DOMContentLoaded', () => {
     window.onresize = function () {
         resizeCanvas();
     };
+
 })
