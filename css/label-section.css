@@ -1,0 +1,13 @@
+.label-canvas {
+    width: 80%;
+    /* Задаём гибкую ширину */
+    height: auto;
+    /* Высота подстраивается автоматически */
+}
+
+.label-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}

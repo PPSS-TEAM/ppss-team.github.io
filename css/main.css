@@ -11,7 +11,19 @@ body {
     overflow: hidden;
 }
 
-:root{
+:root {
+    /* rgb(111, 64, 126); */
     --color-purple-main: #6f407e;
-    
+
+    --color-purple-light: #a75ec0;
+
+    --color-purple-dark: #303;
+
+    --color-purple-light-dark: #500050;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

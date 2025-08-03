@@ -13,8 +13,9 @@
 
   <!-- Scripts -->
 
-  <script src="./javascript/tmp.js"></script>
+  <script src="./javascript/label-anim.js"></script>
   <script src="./javascript/openScreenshots.js"></script>
+  <script src="./javascript/lampMovement.js"></script>
 
 </head>
 
@@ -37,56 +38,114 @@
 
       <div class="pictures-about-project">
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
+          </div>
+        </div>
+        <div class="group">
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
+          <div class="mask">
+            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
           <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
-          </div>
-        </div>
-        <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
-          <div class="mask">
-            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
-          </div>
-        </div>
-        <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
-          <div class="mask">
-            <img class="bg" src="./img/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
           </div>
         </div>
       </div>
       <div class="about-project">
         <img class="paper" src="./img/paper.png" alt="Газета" />
-        <p1 class="text-on-paper">PPSS - мод-игра по вселенной Papers, Please, которая расскажет об альтернативной истории, об вырезанных страннах и о новых героях.</p>
+        <p1 class="text-on-paper">PPSS - мод-игра по вселенной Papers, Please, которая расскажет об альтернативной
+          истории, об вырезанных страннах и о новых героях.</p>
       </div>
       <div class="">
 
       </div>
     </section>
+
+    <section class="social-media-section">
+      <h2 class="social-media-section-title">СОЦИАЛЬНЫЕ СЕТИ</h2>
+
+      <div class="social-shelves">
+        <div class="shelf-container" onclick="window.open('#', '_blank')">
+          <!-- Лампа теперь будет отрисовываться на Canvas, но этот div служит якорем -->
+          <div class="lamp"></div>
+          <div class="document-shelf">
+            <div class="documents">
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+            </div>
+            <div class="shelf-front"></div>
+          </div>
+          <div class="social-label">TWITTER</div>
+        </div>
+        <!-- Добавляем еще один контейнер для лампы -->
+        <div class="shelf-container" onclick="window.open('#', '_blank')">
+          <div class="lamp"></div>
+          <div class="document-shelf">
+            <div class="documents">
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+            </div>
+            <div class="shelf-front"></div>
+          </div>
+          <div class="social-label">FACEBOOK</div>
+        </div>
+        <!-- Добавляем еще один контейнер для лампы -->
+        <div class="shelf-container" onclick="window.open('#', '_blank')">
+          <div class="lamp"></div>
+          <div class="document-shelf">
+            <div class="documents">
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+              <div class="document"></div>
+            </div>
+            <div class="shelf-front"></div>
+          </div>
+          <div class="social-label">INSTAGRAM</div>
+        </div>
+      </div>
+      <canvas class="social-media-canvas" id="lampCanvas"></canvas>
+    </section>
+
+    <section class="label-section">
+      <canvas class="label-canvas" id="labelCanvas"></canvas>
+    </section>
+
   </main>
 
   <footer class="footer">
 
   </footer>
-
 </body>
 
 </html>

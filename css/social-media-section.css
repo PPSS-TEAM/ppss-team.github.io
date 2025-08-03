@@ -1,0 +1,173 @@
+/*
+    CSS код только части секции 'social-media'
+*/
+
+.social-media-section {
+    border-radius: 20px;
+    position: relative;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-media-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 100px;
+    color: var(--color-purple-main);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.social-shelves {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.shelf-container {
+    width: 250px;
+    position: relative;
+    height: 200px;
+    cursor: pointer;
+}
+
+.lamp {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    visibility: hidden;
+}
+
+.document-shelf {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: var(--color-purple-dark);
+    border: 3px solid var(--color-purple-light-dark);
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.shelf-container:hover .document-shelf {
+    transform: perspective(500px) rotateX(-10deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.shelf-front {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    height: 120px;
+    background: var(--color-purple-main);
+    border-top: 2px solid var(--color-purple-light);
+    transition: height 0.4s ease;
+}
+
+.shelf-container:hover .shelf-front {
+    height: 80px;
+}
+
+.documents {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 130px;
+    transition: all 0.4s ease;
+}
+
+.shelf-container:hover .documents {
+    top: -10px;
+    bottom: 90px;
+    transform: perspective(100px) rotateX(-10deg);
+}
+
+.document {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.document:nth-child(1) {
+    left: 10px;
+    top: 5px;
+    transform: rotate(-3deg);
+    background: #F0F8FF;
+}
+
+.document:nth-child(2) {
+    left: 50px;
+    top: 0px;
+    transform: rotate(2deg);
+    background: #FFF8DC;
+}
+
+.document:nth-child(3) {
+    left: 90px;
+    top: 8px;
+    transform: rotate(0);
+    background: #F5F5DC;
+}
+
+.document:nth-child(4) {
+    left: 130px;
+    top: 3px;
+    transform: rotate(-4deg);
+    background: #FFFAF0;
+}
+
+.document:nth-child(5) {
+    left: 150px;
+    top: 10px;
+    transform: rotate(3deg);
+    background: #fff0f0;
+}
+
+.social-label {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.shelf-container:hover .social-label {
+    background: var(--color-purple-light);
+    transform: translateX(-50%) translateY(-10px) perspective(500px) rotateX(-20deg);
+}
+
+/* Стили для Canvas */
+.social-media-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /* Помещаем Canvas поверх полок */
+    pointer-events: none;
+    /* Разрешаем клики и события на элементах под Canvas */
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .social-shelves {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+}
