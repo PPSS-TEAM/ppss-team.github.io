@@ -27,7 +27,7 @@
   <main>
     <section class="start-logo-section">
       <img class="start-logo" src="./img/full_logo.png" alt="Логотип игры 'Papers, Please. Save Skoatia'" id="test" />
-      <button class="start-logo-btn --font-veda">
+      <button class="start-logo-btn --font-veda" onclick="window.open('https://t.me/ppssdev')">
         Играть
       </button>
     </section>
@@ -38,46 +38,53 @@
 
       <div class="pictures-about-project">
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер"
+            onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
           <div class="mask">
             <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер"
+            onclick="openScreenshot('./img/screenshots/screenshot2.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot2.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер"
+            onclick="openScreenshot('./img/screenshots/screenshot3.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot3.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер" 
+          onclick="openScreenshot('./img/screenshots/screenshot4.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot4.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер"
+            onclick="openScreenshot('./img/screenshots/screenshot5.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot5.png" alt="Скриншот" />
           </div>
         </div>
         <div class="group">
-          <img class="comp" src="./img/comp.png" alt="Компьютер" onclick="openScreenshot('./img/screenshots/screenshot1.png')" />
+          <img class="comp" src="./img/comp.png" alt="Компьютер"
+            onclick="openScreenshot('./img/screenshots/screenshot6.png')" />
           <div class="mask">
-            <img class="bg" src="./img/screenshots/screenshot1.png" alt="Скриншот" />
+            <img class="bg" src="./img/screenshots/screenshot6.png" alt="Скриншот" />
           </div>
         </div>
       </div>
       <div class="about-project">
-        <img class="paper" src="./img/paper.png" alt="Газета" />
-        <p1 class="text-on-paper">PPSS - мод-игра по вселенной Papers, Please, которая расскажет об альтернативной
-          истории, об вырезанных страннах и о новых героях.</p>
+        <img class="paper up-paper" src="./img/paper.png" alt="Газета" onclick="openScreenshot('./img/paper.png', 3, 'pixelated')">
+          <img class="paper down-paper down-paper-left" src="./img/paper.png" alt="Газета" />
+          <img class="paper down-paper down-paper-right" src="./img/paper.png" alt="Газета" />
+        </img>
       </div>
       <div class="">
 
@@ -88,7 +95,7 @@
       <h2 class="social-media-section-title">СОЦИАЛЬНЫЕ СЕТИ</h2>
 
       <div class="social-shelves">
-        <div class="shelf-container" onclick="window.open('#', '_blank')">
+        <div class="shelf-container" onclick="window.open('https://www.youtube.com/@femili_lavv')">
           <!-- Лампа теперь будет отрисовываться на Canvas, но этот div служит якорем -->
           <div class="lamp"></div>
           <div class="document-shelf">
@@ -101,10 +108,10 @@
             </div>
             <div class="shelf-front"></div>
           </div>
-          <div class="social-label">TWITTER</div>
+          <div class="social-label">YOUTUBE</div>
         </div>
         <!-- Добавляем еще один контейнер для лампы -->
-        <div class="shelf-container" onclick="window.open('#', '_blank')">
+        <div class="shelf-container" onclick="window.open('https://t.me/ppssdev')">
           <div class="lamp"></div>
           <div class="document-shelf">
             <div class="documents">
@@ -116,10 +123,10 @@
             </div>
             <div class="shelf-front"></div>
           </div>
-          <div class="social-label">FACEBOOK</div>
+          <div class="social-label">TELEGRAM</div>
         </div>
         <!-- Добавляем еще один контейнер для лампы -->
-        <div class="shelf-container" onclick="window.open('#', '_blank')">
+        <div class="shelf-container" onclick="window.open('https://boosty.to/ppss')">
           <div class="lamp"></div>
           <div class="document-shelf">
             <div class="documents">
@@ -131,7 +138,7 @@
             </div>
             <div class="shelf-front"></div>
           </div>
-          <div class="social-label">INSTAGRAM</div>
+          <div class="social-label">BOOSTY</div>
         </div>
       </div>
       <canvas class="social-media-canvas" id="lampCanvas"></canvas>
