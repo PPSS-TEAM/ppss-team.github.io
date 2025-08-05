@@ -31,9 +31,22 @@
     transition: all 0.3s ease;
 }
 
-.start-logo-btn:hover {
-    color: var(--color-purple-light);
-    border: 3px dashed var(--color-purple-light);
-    background-color: black;
-    transform: scale(1.05);
+
+
+@media (hover: none),
+(pointer: coarse) {
+    .start-logo-btn:active {
+        color: var(--color-purple-light);
+        border: 3px dashed var(--color-purple-light);
+        transform: scale(1.05);
+    }
 }
+
+@media (hover: hover) and (pointer: fine) {
+    .start-logo-btn:hover {
+        color: var(--color-purple-light);
+        border: 3px dashed var(--color-purple-light);
+        transform: scale(1.05);
+    }
+}
+

@@ -57,8 +57,17 @@
     cursor: pointer;
 }
 
-.group:hover {
-    transform: scale(1.05);
+@media (hover: none),
+(pointer: coarse) {
+    .group:active {
+        transform: scale(1.05);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .group:hover {
+        transform: scale(1.05);
+    }
 }
 
 .mask {
@@ -87,8 +96,17 @@
     transition: all 0.3s ease;
 }
 
-.paper:hover {
-    transform: scale(1.1) rotate3d(1, 1, 0, 10deg);
+@media (hover: none),
+(pointer: coarse) {
+    .paper:active {
+        transform: scale(1.1) rotate3d(1, 1, 0, 10deg);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .paper:hover {
+        transform: scale(1.1) rotate3d(1, 1, 0, 10deg);
+    }
 }
 
 .up-paper {

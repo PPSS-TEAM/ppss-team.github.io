@@ -23,6 +23,8 @@
     display: flex;
     justify-content: space-around;
     padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .shelf-container {
@@ -164,10 +166,5 @@
 @media (max-width: 768px) {
     .section-title {
         font-size: 2rem;
-    }
-
-    .social-shelves {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 30px;
     }
 }
