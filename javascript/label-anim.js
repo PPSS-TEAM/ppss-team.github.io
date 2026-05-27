@@ -11,8 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
     // NOTE: Используем имя нового шрифта
     const fontFamily = 'Veda, sans-serif';
     // NOTE: Теперь эти переменные влияют на цвет текста
-    const defaultColor = '#6f407e';
-    const hoverColor = '#500050';
+    const defaultColor = '#B27CB2';
+    const hoverColor = '#7F3F7F';
     const textPadding = 50; // Увеличиваем отступ вокруг текста для более широкой области наведения
 
     // NOTE: Новые переменные для автоматической смены текста на устройствах без курсора
