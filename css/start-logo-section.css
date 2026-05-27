@@ -11,42 +11,49 @@
 .start-logo {
     --start-logo-size: min(70%, 50vh);
     width: var(--start-logo-size);
-    height: var(--start-logo-size) * 0.8f;
+    height: calc(var(--start-logo-size) * 0.8); 
     position: relative;
     margin: 10vh;
     transition: top;
 }
 
 .start-logo-btn {
-    color: var(--color-purple-main);
-    cursor: pointer;
-    width: min(70%, 50vh);
-    height: 100%;
-    border-radius: 10px;
-    border: 3px dashed var(--color-purple-main);
-    font-weight: 900;
-    font-size: 100%;
-    background-color: black;
-    padding: 15px 0;
-    transition: all 0.3s ease;
+  cursor: pointer;
+  display: block;
+  width: min(85%, 340px);
+  aspect-ratio: 240 / 44; 
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  
+
+  background-image: url('../img/btn_normal.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+
+  transition: transform 0.1s ease;
+
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;   
+  -moz-user-select: none;      
+  -ms-user-select: none;       
+  user-select: none;           
+  -webkit-user-drag: none;     
 }
 
-
-
-@media (hover: none),
-(pointer: coarse) {
-    .start-logo-btn:active {
-        color: var(--color-purple-light);
-        border: 3px dashed var(--color-purple-light);
-        transform: scale(1.05);
-    }
-}
-
+/* При наведении (Desktop) */
 @media (hover: hover) and (pointer: fine) {
-    .start-logo-btn:hover {
-        color: var(--color-purple-light);
-        border: 3px dashed var(--color-purple-light);
-        transform: scale(1.05);
-    }
+  .start-logo-btn:hover {
+    background-image: url('../img/btn_hover.png');
+    transform: scale(1.02); 
+  }
 }
 
+/* При нажатии (Mobile / Touch) */
+@media (hover: none), (pointer: coarse) {
+  .start-logo-btn:active {
+    background-image: url('../img/btn_hover.png');
+    transform: scale(0.97); 
+  }
+}
