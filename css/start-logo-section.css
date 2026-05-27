@@ -13,7 +13,7 @@
     width: var(--start-logo-size);
     height: var(--start-logo-size) * 0.8f;
     position: relative;
-
+    margin: 10vh;
     transition: top;
 }
 
