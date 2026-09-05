@@ -1,0 +1,164 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Appeal - Papers, Please. Save Skoatia</title>
+  <link rel="stylesheet" href="./css/linker.css" />
+  <link rel="icon" href="img/little_logo.png" type="image/png">
+  
+  <style>
+    /* Стили только для страницы appeal */
+    .appeal-page-body {
+      background-color: var(--color-purple-dark);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    
+    .appeal-paper {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      min-height: 500px;
+      background: #fffef0;
+      border-radius: 3px;
+      box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.1),
+        0 10px 40px rgba(0, 0, 0, 0.3);
+      padding: 50px 40px;
+      image-rendering: pixelated;
+      transform: rotate(-1deg);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .appeal-paper:hover {
+      transform: rotate(0deg) scale(1.02);
+      box-shadow: 
+        0 2px 6px rgba(0, 0, 0, 0.15),
+        0 15px 50px rgba(0, 0, 0, 0.4);
+    }
+    
+    .appeal-content {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #1a1a1a;
+      text-align: left;
+    }
+    
+    .appeal-content p {
+      margin-bottom: 1.5em;
+    }
+    
+    .appeal-content .greeting {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 1.5em;
+    }
+    
+    .appeal-content .ps {
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px dashed #ccc;
+      font-size: 0.9em;
+      color: #666;
+    }
+    
+    .appeal-content .ps-strong {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .appeal-stamp {
+      position: absolute;
+      bottom: 80px;
+      right: 60px;
+      width: 120px;
+      height: 120px;
+      border: 4px solid #c00;
+      border-radius: 50%;
+      color: #c00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transform: rotate(-15deg);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+    
+    .appeal-footer-link {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 0.7rem;
+      color: var(--color-purple-dark);
+      opacity: 0.3;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    
+    .appeal-footer-link:hover {
+      opacity: 0.6;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .appeal-page-body {
+        padding: 20px 10px;
+      }
+      
+      .appeal-paper {
+        padding: 30px 20px;
+        min-height: auto;
+      }
+      
+      .appeal-content {
+        font-size: 0.9rem;
+      }
+      
+      .appeal-stamp {
+        width: 80px;
+        height: 80px;
+        font-size: 0.7rem;
+        bottom: 40px;
+        right: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body class="appeal-page-body">
+  <div class="appeal-paper">
+    <div class="appeal-content">
+      <p class="greeting">Hello, Lucas Pope.</p>
+      
+      <p>If you are reading this message, it means you have already heard about our project (i am afraid(). Before you bust us (I know you want to), please read this brief appeal. We want to assure you that we are not trying to infringe on your game, Papers, Please. Our project is not a sequel, nor does it claim to be anything more than a non-profit fan game made by fans for fans from fans. We do not position Papers, Please: Save Skoatia (hereinafter PPSS) as a commercial product — the game is completely free-to-play and will be distributed strictly for free. Furthermore, any potential merchandise or planned book will not infringe on your copyright, as all characters featured in them are entirely original and do not appear in the original game. Fictional nations from the Papers, Please universe, such as Arstotzka, Kolechia, or Antegria, (and etc.) are not mentioned in these materials, as everything pertains exclusively to our own original setting. Just don't hit me pls 🙏🙏🙏</p>
+      
+      <p>Thank you for your time and consideration. If you have any questions, email me at <a href="mailto:bekirousultan7@gmail.com" style="color: var(--color-purple-main);">bekirousultan7@gmail.com</a> or <a href="https://t.me/bekirou" style="color: var(--color-purple-main);">@bekirou</a> in Telegram.</p>
+      
+      <div class="ps">
+        <p class="ps-strong">P.S. (not PPSS):</p>
+        <p>u are sexman. like batman, but sex</p>
+        
+        <p class="ps-strong">P.P.S. (not PPPSS):</p>
+        <p>no one fan suffered 😇😇😇</p>
+      </div>
+    </div>
+    
+    <div class="appeal-stamp">FAN GAME</div>
+  </div>
+  
+  <a href="index.html" class="appeal-footer-link">for Lucas Pope</a>
+</body>
+
+</html>
